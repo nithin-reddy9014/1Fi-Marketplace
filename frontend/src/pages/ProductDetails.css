@@ -1,0 +1,348 @@
+/* =========================
+   PRODUCT DETAILS
+========================= */
+
+.details-page {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 0 auto;
+
+  padding: 24px 24px 130px;
+}
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.details-image {
+  width: 100%;
+
+  height: 420px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f8f7fb;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+}
+
+.details-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 30px;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.details-content {
+  width: 100%;
+  max-width: 760px;
+
+  margin: 28px auto 0;
+}
+
+.details-content .product-brand {
+  margin-bottom: 7px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+
+  color: #8a8490;
+}
+
+.details-content h1 {
+  margin: 0;
+
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 750;
+
+  color: #17121f;
+}
+
+.details-content h2 {
+  margin-top: 12px;
+
+  font-size: 25px;
+  font-weight: 750;
+
+  color: #17121f;
+}
+
+.description {
+  margin-top: 14px;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  color: #6f6977;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section {
+  margin-top: 30px;
+}
+
+.section h3 {
+  margin-bottom: 13px;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  color: #211b29;
+}
+
+/* =========================
+   VARIANTS
+========================= */
+
+.variant-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.variant {
+  padding: 10px 16px;
+
+  border: 1px solid #e4dfea;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: #514a58;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.variant:hover {
+  border-color: #b99ae8;
+  color: #6d28d9;
+}
+
+.variant.selected {
+  border-color: #6d28d9;
+
+  background: #faf7ff;
+
+  color: #6d28d9;
+}
+
+/* =========================
+   EMI LIST
+========================= */
+
+.emi-list {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+/* =========================
+   CONTINUE BUTTON
+========================= */
+
+.continue-btn {
+  width: 100%;
+
+  margin-top: 32px;
+
+  padding: 15px 20px;
+
+  border: none;
+  border-radius: 13px;
+
+  background: #6d28d9;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.continue-btn:hover {
+  background: #5b21b6;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 7px 20px rgba(109, 40, 217, 0.2);
+}
+
+/* =========================
+   INFO CARDS
+========================= */
+
+.info-card {
+  margin-top: 18px;
+
+  padding: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeaf5;
+  border-radius: 15px;
+}
+
+.info-card h3 {
+  margin-bottom: 10px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  color: #211b29;
+}
+
+.info-card p {
+  margin-top: 7px;
+
+  font-size: 12px;
+  line-height: 1.55;
+
+  color: #77717f;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 700px) {
+  .details-page {
+    padding: 20px 16px 120px;
+  }
+
+  .details-image {
+    height: 350px;
+    border-radius: 20px;
+  }
+
+  .details-content h1 {
+    font-size: 26px;
+  }
+
+  .details-content h2 {
+    font-size: 22px;
+  }
+
+  .emi-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .details-page {
+    padding: 14px 12px 110px;
+  }
+
+  .details-image {
+    height: 280px;
+    border-radius: 17px;
+  }
+
+  .details-image img {
+    padding: 20px;
+  }
+
+  .details-content {
+    margin-top: 20px;
+  }
+
+  .details-content h1 {
+    font-size: 22px;
+  }
+
+  .details-content h2 {
+    margin-top: 9px;
+    font-size: 20px;
+  }
+
+  .description {
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .section {
+    margin-top: 24px;
+  }
+
+  .section h3 {
+    font-size: 15px;
+  }
+
+  .variant {
+    padding: 8px 13px;
+    font-size: 12px;
+  }
+
+  .emi-list {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .continue-btn {
+    margin-top: 25px;
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .info-card {
+    padding: 15px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 350px) {
+  .details-page {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .details-image {
+    height: 240px;
+  }
+
+  .details-content h1 {
+    font-size: 20px;
+  }
+
+  .details-content h2 {
+    font-size: 18px;
+  }
+}

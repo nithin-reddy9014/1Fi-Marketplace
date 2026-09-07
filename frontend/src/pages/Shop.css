@@ -1,0 +1,316 @@
+/* =========================
+   SHOP PAGE
+========================= */
+
+.shop-page {
+  width: 100%;
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  padding: 24px 24px 130px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 40px 30px;
+
+  background: linear-gradient(135deg, #f4edff 0%, #faf8ff 55%, #ffffff 100%);
+
+  border: 1px solid #eee7f8;
+  border-radius: 24px;
+}
+
+.hero > span {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 0.8px;
+
+  color: #6d28d9;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: 38px;
+  line-height: 1.12;
+  font-weight: 750;
+
+  color: #17121f;
+}
+
+.hero h1 i {
+  font-style: normal;
+
+  color: #6d28d9;
+}
+
+.hero p {
+  margin-top: 18px;
+
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: #77717f;
+}
+
+/* =========================
+   SHOP TABS
+========================= */
+
+.tabs {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 8px;
+
+  margin-top: 20px;
+
+  padding: 5px;
+
+  background: #f1eef5;
+
+  border-radius: 13px;
+}
+
+.tabs button {
+  border: none;
+
+  padding: 11px 8px;
+
+  border-radius: 9px;
+
+  background: transparent;
+
+  color: #77717f;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.tabs button.selected {
+  background: #ffffff;
+
+  color: #6d28d9;
+
+  box-shadow: 0 2px 8px rgba(35, 20, 80, 0.08);
+}
+
+/* =========================
+   BLANK PAGES
+========================= */
+
+.blank-page {
+  min-height: 300px;
+}
+
+/* =========================
+   MARKETPLACE ENTRY
+========================= */
+
+.marketplace-entry {
+  margin-top: 20px;
+}
+
+.marketplace-intro {
+  padding: 30px;
+
+  background: #ffffff;
+
+  border: 1px solid #eeeaf5;
+  border-radius: 20px;
+
+  box-shadow: 0 5px 20px rgba(35, 20, 80, 0.06);
+}
+
+.marketplace-intro > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  margin-bottom: 15px;
+
+  border-radius: 13px;
+
+  background: #f1e9ff;
+
+  color: #6d28d9;
+
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.marketplace-intro h2 {
+  margin: 0;
+
+  font-size: 25px;
+  font-weight: 750;
+
+  color: #17121f;
+}
+
+.marketplace-intro > span {
+  display: block;
+
+  margin-top: 7px;
+
+  font-size: 13px;
+
+  color: #77717f;
+}
+
+.marketplace-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 22px;
+
+  padding: 12px 18px;
+
+  border-radius: 11px;
+
+  background: #6d28d9;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.marketplace-btn:hover {
+  background: #5b21b6;
+
+  transform: translateY(-1px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 700px) {
+  .shop-page {
+    padding: 20px 16px 120px;
+  }
+
+  .hero {
+    padding: 32px 24px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .shop-page {
+    padding: 14px 12px 110px;
+  }
+
+  .hero {
+    padding: 26px 20px;
+
+    border-radius: 18px;
+  }
+
+  .hero > span {
+    margin-bottom: 13px;
+
+    font-size: 9px;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  .hero p {
+    margin-top: 14px;
+
+    font-size: 12px;
+  }
+
+  .tabs {
+    gap: 5px;
+    margin-top: 14px;
+  }
+
+  .tabs button {
+    padding: 10px 4px;
+
+    font-size: 10px;
+  }
+
+  .marketplace-entry {
+    margin-top: 14px;
+  }
+
+  .marketplace-intro {
+    padding: 22px;
+
+    border-radius: 17px;
+  }
+
+  .marketplace-intro h2 {
+    font-size: 21px;
+  }
+
+  .marketplace-intro > span {
+    font-size: 12px;
+  }
+
+  .marketplace-btn {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 12px;
+
+    font-size: 12px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 350px) {
+  .shop-page {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .tabs button {
+    font-size: 9px;
+  }
+}
