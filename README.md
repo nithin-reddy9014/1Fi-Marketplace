@@ -1,50 +1,35 @@
 # 1Fi Marketplace
 
-A responsive 1Fi Marketplace web application built as part of a frontend development task.
-
-The application allows users to explore products, search for products, view product details, select product variants, and choose flexible EMI plans.
+A responsive frontend implementation of the 1Fi Marketplace, built as part of a frontend development assignment.
 
 ## Features
 
-- Responsive marketplace UI
-- Shop page with three sections:
-  - Top Brands
-  - Nearby Stores
-  - 1Fi Marketplace
+- Responsive Shop page
+- Top Brands section
+- Nearby Stores section
+- 1Fi Marketplace section
 - Product listing
 - Product search
 - Product details page
-- Product image display
 - Product variant selection
 - EMI plan selection
 - No-cost EMI information
-- Responsive product grid
+- Responsive product cards
 - Mobile-friendly bottom navigation
 - Loading and error states
-- Component-based React structure
-- Separate CSS files for each component and page
 
 ## Tech Stack
 
-### Frontend
-
 - React.js
 - JavaScript
-- React Router DOM
+- React Router
 - CSS
 - Vite
-
-### Data / API
-
-- Product service API
-- Dynamic product data
-- Dynamic EMI plan data
 
 ## Project Structure
 
 ```text
 src/
-│
 ├── components/
 │   ├── BottomNav.jsx
 │   ├── BottomNav.css
